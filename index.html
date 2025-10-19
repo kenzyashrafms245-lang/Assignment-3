@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-…yourIntegrity…" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body class="position-relative">
+    
+
+    <div class=" d-flex justify-content-center align-items-center">
+        <h1 class=" display-5 mt-4   position-relative">Bookmarker</h1>
+    </div>
+    <div class="Border mt-5"></div>
+    <div class="d-flex justify-content-center align-items-center">
+        <h2><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+    </div>
+    <div class="container">
+        <div class="mb-3">
+            <label for="siteName" class="form-label fw-bold"><i class="fa-solid fa-book-bookmark"></i>
+                Site
+                Name</label>
+            <input type="email" class="form-control" id="siteName" placeholder="Bookmark Name">
+        </div>
+        <div class="mb-3">
+            <label for="siteURL" class="form-label fw-bold"><i class="fa-solid fa-link"></i> Site
+                URL</label>
+            <input type="email" class="form-control" id="siteURL" placeholder="Website URL">
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center">
+            <button class="btn" onclick="addBookmark()">Submit</button>
+        </div>
+    </div>
+    <div class="Border mt-5"></div>
+
+    <div class="container table">
+        <table class="table text-center">
+            <thead>
+                <tr>
+                    <th scope="col">Index</th>
+                    <th scope="col">Website Name</th>
+                    <th scope="col">Visit</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tableContent"> </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
+
+
